@@ -1,8 +1,15 @@
 <head>
 
+ <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 <script>
- 
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "5eab9d75-c0bd-4665-a4b8-d892c1a5d7a7",
+    });
+  });
 </script>
+
 </head>
 <body>
   <h1>Hello world</h1>
